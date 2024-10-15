@@ -23,12 +23,13 @@ border-color: #f44336;
 <body>
 <p><a href="index.html">Go back</a></p>
 
-<input
-type="text"
-id="validation-input"
-data-length="6"
-placeholder="Please enter 6 symbols"
-/>
+<div id="controls">
+    <input type="number" min="1" max="100" step="1" />
+    <button type="button" data-create>Create</button>
+    <button type="button" data-destroy>Destroy</button>
+  </div>
+  
+  <div id="boxes"></div>
 
 <script src="./js/task-6.js" type="module"></script>
 </body>
